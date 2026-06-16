@@ -41,18 +41,22 @@ I added some layer 3 switches. Now for the end devices or servers. I need to be 
 <br />
 
 <p>
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/98481834-0630-4794-b577-c4a572e29843" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/98481834-0630-4794-b577-c4a572e29843" /> <img width="400" alt="image" src="https://github.com/user-attachments/assets/8ac9e76d-7dc5-4acd-825d-ed0ed2c8a661" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+HSRP allows multiple routers to function as a single virtual router, meaning if the primary router fails, another router can immediately take over without disrupting network services. 
+  <p> So now i have done the HSRP configurations with the virtual IP address of 10.1.1.254. 
+  This means that if a end device's connection to an Edge router fails, the standby router will switch to an active router and the servers will now continue sending traffic to the new active router.
+    <p> Its important that I will configure the end devices' default gateway as the Virtual IP address instead of the physical interface address.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/323de5c5-2118-4a52-8ff3-86c3969a9425" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lets now look at the link between Core 1 and Core 2. Because they are connected to each other over 2 access links, spanning-tree protocol is going to take affect and we're essentially losing bandwidth of one of the links highlighted in orange. If one of the links were fail, spanning tree will take over and allow the other link to come up but only after 50 seconds of going in between the forwarding protocols.
 </p>
 <br />
 
