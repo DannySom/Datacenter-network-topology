@@ -61,18 +61,19 @@ Lets now look at the link between Core 1 and Core 2. Because they are connected 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/70eb2a90-cb0e-487d-a791-b0305c24673e" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now, I'll set up everything on the external side onto VLAN 90. The link between the Core Switches will not be be for the Access or Server layers. It is for the redundancy for the Edge side of the Core Switches.
+  <p> I configured interface g1/0/24 to be on Vlan 90 in access mode and configured interface g01/0/20 - 21 into a portchannel mode desireable. It now says PAGP currently not enabled on the remote port. This means that I have not set Core 2's side as a port channel.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/05484a9d-d24f-43f3-a147-608c7c204bd7" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+So now that I have configured the same thing on Core 2, the area in red from the Core side should be in VLAN 90. We can then confirm this by going into Edge 1
 </p>
 <br />
 
