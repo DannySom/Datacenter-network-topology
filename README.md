@@ -70,10 +70,11 @@ Now, I'll set up everything on the external side onto VLAN 90. The link between 
 <br />
 
 <p>
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/05484a9d-d24f-43f3-a147-608c7c204bd7" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/05484a9d-d24f-43f3-a147-608c7c204bd7" /> <img width="400" alt="image" src="https://github.com/user-attachments/assets/6e00e4f5-95c5-4865-b448-4a39bcded562" />
 </p>
 <p>
-So now that I have configured the same thing on Core 2, the area in red from the Core side should be in VLAN 90. We can then confirm this by going into Edge 1
+So now that I have configured the same thing on Core 2, the area in red from the Core side should be in VLAN 90. We can then confirm this by going into Edge 1 and ping and verify if edge 2 is reachable from edge 1. If I receive a reply, it confirms that the devices can communicate over the network.
+  <p> Now that the ping is successful, not only do we have connectivity between the two Edge routers but we also confirmed that all of the connectivity in the area is now working over VLAN 90 which means the configuration is working as intended. Since the external link on VLAN 90 is built for redundancy, if one of the core switches, Core 1, were to fail, all traffic would through to Core 2.
 </p>
 <br />
 
@@ -81,7 +82,8 @@ So now that I have configured the same thing on Core 2, the area in red from the
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+So now that we have set up the Core (Spine) and Edge side, I am now going to look at the Access Layer or the Leaf of the topology or essentially, "Spine and Leaf" side of the topology. In this topology, the access layer, also known as leaf switches, plays a critical role in connecting devices within a network, especially in data center environments. The leaf switches also facilitate east-to-west traffic, which is the communication between servers in a data center. <p> 
+  Each of these leaf switches needs to connect to each of our Core network, and the best practice to do so is with redundant links.
 </p>
 <br />
 
