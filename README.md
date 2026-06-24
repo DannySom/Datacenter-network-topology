@@ -79,12 +79,12 @@ So now that I have configured the same thing on Core 2, the area in red from the
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/8eb967ee-dda2-4ecc-b701-d32d995429d7" />
 </p>
 <p>
 So now that we have set up the Core (Spine) and Edge side, I am now going to look at the Access Layer or the Leaf of the topology or essentially, "Spine and Leaf" side of the topology. In this topology, the access layer, also known as leaf switches, plays a critical role in connecting devices within a network, especially in data center environments. The leaf switches also facilitate east-to-west traffic, which is the communication between servers in a data center. <p> 
   When talking about East-to-West traffic, what it essentially means is that it is the data comunication between different systems or devices within the same data center or network, like in our topology currently being server to server communication, as opposed to North-to-South traffic, which involves data moving between the data center and the external world. An example of North-to-West traffic is if a user requests data from the external internet. <p> 
-  Each of these leaf switches needs to connect to each of our Core network, and the best practice to do so is with redundant links.
+  Each of these leaf switches needs to connect to each of our Core network, and the best practice to do so is with redundant links. I now have the switches in between the Spine and leaf switches connected but I do not connect the Leaf switches. This is to minimize latency and simplifies traffic patterns within our topology. By not connecting leaf switches directly, the design ensures that all traffic routes through the spine layer. So if Access switch 1 needs to send data through Access 2, it's not going to go directly and will either go through Core 1 to Access 2 or Core 2 Access 2. Like I mentioned before, if Core 1 fails, and it will through Core 2. Internal traffic between servers will not go through the External Link.
 </p>
 <br />
 
