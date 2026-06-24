@@ -83,6 +83,7 @@ So now that I have configured the same thing on Core 2, the area in red from the
 </p>
 <p>
 So now that we have set up the Core (Spine) and Edge side, I am now going to look at the Access Layer or the Leaf of the topology or essentially, "Spine and Leaf" side of the topology. In this topology, the access layer, also known as leaf switches, plays a critical role in connecting devices within a network, especially in data center environments. The leaf switches also facilitate east-to-west traffic, which is the communication between servers in a data center. <p> 
+  When talking about East-to-West traffic, what it essentially means is that it is the data comunication between different systems or devices within the same data center or network, like in our topology currently being server to server communication, as opposed to North-to-South traffic, which involves data moving between the data center and the external world. An example of North-to-West traffic is if a user requests data from the external internet. <p> 
   Each of these leaf switches needs to connect to each of our Core network, and the best practice to do so is with redundant links.
 </p>
 <br />
