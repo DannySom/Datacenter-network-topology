@@ -89,10 +89,11 @@ So now that we have set up the Core (Spine) and Edge side, I am now going to loo
 <br />
 
 <p>
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/bf14897e-fd53-4709-861e-89ac98137b82" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/bf14897e-fd53-4709-861e-89ac98137b82" /> <img width="400" alt="image" src="https://github.com/user-attachments/assets/fde42561-edfe-41ef-a068-44a0f5a22cf5" />
+
 </p>
 <p>
-I've added 4 servers connected to the access (leaf) switches with their IP configurations. VLAN 1 is for production with the subnet 192.168.1.0/24 and VLAN 2 is for development with the subnet 192.168.2.0/24. These are all generally going to be used for virtualization platforms for our datacenter. As for Dev Host 1 and 2, these are designated for development purposes. They allow developers to test code, experiment with software configurations, and deploy applications in an isolated environment without affecting production systems. 
+I've added 4 servers connected to the access (leaf) switches with their IP configurations and have added the VLANS on all the switches. VLAN 1 is for production with the subnet 192.168.1.0/24 and VLAN 2 is for development with the subnet 192.168.2.0/24. These are all generally going to be used for virtualization platforms for our datacenter. As for Dev Host 1 and 2, these are designated for development purposes. They allow developers to test code, experiment with software configurations, and deploy applications in an isolated environment without affecting production systems. 
 </p>
 <br />
 
